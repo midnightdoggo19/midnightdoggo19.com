@@ -1,9 +1,11 @@
 import explicitRenderHtml from './explicit.html';
 import implicitRenderHtml from './implicit.html';
 
+require('dotenv').config()
+
 // This is the demo secret key. In prod, we recommend you store
 // your secret key(s) safely.
-const SECRET_KEY = '1x0000000000000000000000000000000AA';
+const SECRET_KEY = process.env.SECRET;
 
 async function handlePost(request) {
     const body = await request.formData();
