@@ -27,9 +27,10 @@ url: "https://midnightdoggo19.com" # the base hostname & protocol for your site,
 github_username:  midnightdoggo19
 
 # Build settings
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
