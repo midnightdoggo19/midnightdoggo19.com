@@ -1,0 +1,5 @@
+Contact: mailto:admin@midnightdoggo19.com
+Expires: 2025-12-11T00:00:00.000Z
+Acknowledgments: https://midnightdoggo19.com/thanks
+Preferred-Languages: en
+Canonical: https://midnightdoggo19.com/.well-known/security.txt
