@@ -1,13 +1,11 @@
-// Fetch the list of images from the JSON file
-fetch('./images.json')
+const baseurl = '{{ site.baseurl }}'; 
+fetch(`${baseurl}/images.json`)
     .then(response => response.json())
     .then(images => {
-        // Pick a random image from the array
         const randomIndex = Math.floor(Math.random() * images.length);
         const randomImage = images[randomIndex];
 
-        // Set the background image and caption
-        document.getElementById('background').style.backgroundImage = `url(../images/${randomImage})`;
+        document.getElementById('background').style.backgroundImage = `url(${randomImage})`;
         document.getElementById('caption').textContent = 'github.com/midnightdoggo19/gallery';
     })
     .catch(err => console.error('Error fetching images:', err));
