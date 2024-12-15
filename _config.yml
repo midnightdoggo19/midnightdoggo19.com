@@ -28,7 +28,7 @@ github_username: midnightdoggo19
 
 timezone: Europe/London
 
-permalink: /:categories/:year/:long_month/:title
+permalink: /:categories/:year/:short_month/:title
 
 # Build settings
 theme: minima
