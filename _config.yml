@@ -28,11 +28,20 @@ github_username: midnightdoggo19
 
 timezone: Europe/London
 
+permalink: /:categories/:year/:long_month/:title
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      author: "Midnight Doggo"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -41,7 +50,7 @@ plugins:
 #
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
-#
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/
