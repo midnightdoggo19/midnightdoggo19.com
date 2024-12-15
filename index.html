@@ -1,33 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Midnight Bloggo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Midnight Bloggo">
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+---
+layout: default
+title: Home
+---
+
+<div class="homepage">
+  <header class="main-header">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </header>
+
+  <section class="featured-posts">
+    <h2>Featured Posts</h2>
+    <ul>
+      {% for post in site.posts limit:3 %}
+        <li>
+          <article>
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+          </article>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="about">
+    <h2>About</h2>
+    <p>Howdy! <a href="/about">About me.</a>.</p>
+  </section>
+
+  <footer class="social-links">
+    <h2>Follow Me</h2>
+    <ul>
+      <li><a href="https://github.com/midnightdoggo19">GitHub</a></li>
+      <li><a href="https://bluesky.app/profile/festive.midnightdoggo19.com">Bluesky</a></li>
+    </ul>
+  </footer>
+</div>
+
 <style>
-  body {
-  position: relative;
-  width: 100%;}
-.gallerybox {
-  position: absolute;
-  right: 0;}
+  .homepage {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+  }
+
+  .main-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .main-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  .main-header p {
+    color: #666;
+  }
+
+  .featured-posts ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .featured-posts li {
+    margin-bottom: 20px;
+  }
+
+  .about, .social-links {
+    margin-top: 40px;
+  }
+
+  .social-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    color: #0073e6;
+  }
 </style>
-</head>
-<body>
-  <div class="gallerybox">
-    <iframe 
-      name="Doggallery"
-      src="https://midnightdoggo19.github.io/gallery/"
-      style="width: 100%; height: 100vh; border: none;"
-      title="Gallery">
-    </iframe>
-  </div>
-  <p>Howdy!</p>
-<div
-  class="cf-turnstile"
-  data-sitekey="0x4AAAAAAA2AvAVfXL2gFEqn"
-  data-callback="javascriptCallback"
-></div>
-</body>
-</html>
