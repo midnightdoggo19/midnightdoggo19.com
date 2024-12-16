@@ -153,7 +153,8 @@ dist
 
 # Ignore all JENKINS_HOME except jobs directory, root xml config, and
 # .gitignore file.
-/*
+
+#/*
 !/jobs
 !/.gitignore
 !/*.xml
