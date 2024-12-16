@@ -3,11 +3,6 @@ layout: default
 title: Home
 ---
 
-{% assign image_files = site.static_files | where: "image", true %}
-{% for myimage in image_files %}
-  {{ myimage.path }}
-{% endfor %}
-
 <head>
   <title>Midnight Bloggo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
