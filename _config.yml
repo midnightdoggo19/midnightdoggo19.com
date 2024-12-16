@@ -42,6 +42,11 @@ defaults:
       type: "pages"
     values:
       author: "Midnight Doggo"
+  -
+   scope:
+     path: "assets/images"
+   values:
+     image: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
