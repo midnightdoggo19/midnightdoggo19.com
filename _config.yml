@@ -71,3 +71,4 @@ exclude:
   - README.md
   - .gitignore
   - package-lock.json
+  - .github/
