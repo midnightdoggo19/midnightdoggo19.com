@@ -1,0 +1,6 @@
+---
+permalink: /thanks.txt
+title: Thanks
+---
+
+More info in https://midnightdoggo19.com/security.txt
