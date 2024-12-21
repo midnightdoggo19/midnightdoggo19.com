@@ -1,6 +1,15 @@
 ---
 permalink: /robots.txt
 ---
+
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Meta-ExternalAgent
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: PerplexityBot
+Disallow: /
 User-agent: GPTBot
 Disallow: /
 User-agent: googlebot-image
@@ -13,12 +22,8 @@ User-agent: Teoma
 Disallow: /
 User-agent: Gigabot
 Disallow: /
-User-agent: Robozilla
-Disallow:
 User-agent: Nutch
 Disallow: /
-User-agent: ia_archiver
-Disallow:
 User-agent: baiduspider
 Disallow: /
 User-agent: naverbot
