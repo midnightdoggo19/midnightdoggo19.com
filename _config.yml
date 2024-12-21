@@ -31,7 +31,7 @@ timezone: Europe/London
 permalink: /:categories/:year/:short_month/:title
 
 # Build settings
-remote_theme: pages-themes/hacker@v0.2.0
+theme: hacker@v0.2.0
 #theme: minima
 plugins:
   - jekyll-feed
