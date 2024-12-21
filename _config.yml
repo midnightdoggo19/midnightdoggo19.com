@@ -30,12 +30,10 @@ timezone: Europe/London
 
 permalink: /:categories/:year/:short_month/:title
 
-# Build settings
-theme: hacker@v0.2.0
-#theme: minima
+remote_theme: pages-themes/hacker@v0.2.0
 plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
+- jekyll-remote-theme
+- jekyll-feed
 show_downloads: false
 
 defaults:
