@@ -26,6 +26,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://midnightdoggo19.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: midnightdoggo19
 
+repository: midnightdoggo19/midnightdoggo19.com # ?
+
 timezone: Europe/London
 
 permalink: /:categories/:year/:short_month/:title
