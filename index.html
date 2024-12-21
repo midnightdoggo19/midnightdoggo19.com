@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: home
+layout: default
 ---
 
 <head>
@@ -14,10 +14,6 @@ layout: home
 {% seo %}
 
 <div class="homepage">
-  <header class="main-header">
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.description }}</p>
-  </header>
 
   <section class="featured-posts">
     <h2>Featured Posts</h2>
@@ -47,50 +43,3 @@ layout: home
   </footer>
 </div>
 </body>
-<style>
-  .homepage {
-    font-family: Arial, sans-serif;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 20px;
-  }
-
-  .main-header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .main-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-  }
-
-  .main-header p {
-    color: #666;
-  }
-
-  .featured-posts ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .featured-posts li {
-    margin-bottom: 20px;
-  }
-
-  .about, .social-links {
-    margin-top: 40px;
-  }
-
-  .social-links ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-  }
-
-  .social-links a {
-    text-decoration: none;
-    color: #0073e6;
-  }
-</style>
